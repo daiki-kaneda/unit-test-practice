@@ -57,7 +57,7 @@ public class CalculatorTests {
         assertThrows(
             IllegalArgumentException.class, 
             ()->{
-                calculator.div(1, 0);
+                calculator.div(input, 0);
             });
     }
 }
