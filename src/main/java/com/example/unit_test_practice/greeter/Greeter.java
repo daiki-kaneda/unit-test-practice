@@ -8,6 +8,9 @@ public class Greeter {
     }
 
     public String getGreeting() {
-        return "";
+        if(timeProvider.getHour()<=12){
+            return "Good Morning";
+        }
+        return "Hello";
     }
 }
