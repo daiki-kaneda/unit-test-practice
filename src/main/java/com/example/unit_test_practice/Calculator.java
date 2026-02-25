@@ -6,6 +6,8 @@ public class Calculator {
     }
 
     public int div(int a, int b){
-        return 0;
+        if(b==0)
+            throw new IllegalArgumentException("0で除算はできません。");
+        return a/b;
     }
 }
