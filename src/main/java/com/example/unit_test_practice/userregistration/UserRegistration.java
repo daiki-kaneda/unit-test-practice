@@ -7,5 +7,7 @@ public class UserRegistration {
         this.emailService=emailService;
     }
 
-    public void register(){}
+    public void register(){
+        emailService.sendEmail("ようこそ！");
+    }
 }
